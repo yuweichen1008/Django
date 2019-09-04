@@ -9,10 +9,8 @@ data = [
 class NameTable(tables.Table):
     name = tables.Column()
 
-table = NameTable(data)
-
 class PersonTable(tables.Table):
     class Meta:
         model = Person
         template_name = "django_tables2/bootstrap.html"
-        fields = ("name", )
+        fields = ("full name","first_name", "last_name","birth_date")
