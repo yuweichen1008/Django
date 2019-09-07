@@ -12,3 +12,10 @@ class PersonListView(SingleTableView):
     table_class = PersonTable
     template_name = 'tutorial/people.html'
     
+
+def person_list(request):
+    table = PersonTable(Person.objects.all())
+
+    return render(request, "person_list.html", {
+        "table": table
+    })
