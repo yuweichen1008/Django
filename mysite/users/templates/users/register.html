@@ -1,6 +1,7 @@
 {% extends "users/base.html" %}
 {% block content %}
-<h1>Creative SignUp Form</h1>
+
+<h1>SignUp Form</h1>
 <div class="main-agileinfo">
     <div class="agileits-top">
         <!-- <form action="#" method="POST">
@@ -20,14 +21,16 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend>Join Today</legend>
+                <div class="colorlibcopy-agile">
+                    <p><a href="/"> Back to Home</a></p>
+                </div>
                 {{ form.as_p }}
             </fieldset>
             <div>
                 <input type="submit" value="Sign Up"></button>
             </div>
         </form>
-        <p>Don't have an Account? <a href="#"> Login Now!</a></p>
+        <p>Already Have An Account? <a href="{% url 'login' %}"> Login Now!</a></p>
     </div>
 </div>
 {% endblock content %}
