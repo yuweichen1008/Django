@@ -1,0 +1,12 @@
+{% extends "users/base.html" %}
+{% block content %}
+
+<h1>Log out</h1>
+<div class="main-agileinfo">
+    <div class="wthree-box"></div>
+    <div class="agileits-top">
+        <p>You have been logged out</p>
+        <p><a href="{% url 'login' %}">Log in again</a></p>
+    </div>
+</div>
+{% endblock content %}
