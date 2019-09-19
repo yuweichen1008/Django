@@ -1,5 +1,4 @@
 {% extends "users/base.html" %}
-
 {% load crispy_forms_tags %}
 {% block content %}
 <h1>SignUp Form</h1>
@@ -25,7 +24,7 @@
                 <div class="colorlibcopy-agile">
                     <p><a href="/"> Back to Home</a></p>
                 </div>
-                <p>{{ form.as_p }}</p>
+                <p>{{ form|crispy }}</p>
             </fieldset>
             <div>
                 <input type="submit" value="Sign Up"></button>
