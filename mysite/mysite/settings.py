@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'tutorial.apps.TutorialConfig',
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
-    # 'crispy_forms',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,6 +124,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# change the login directory
 LOGIN_REDIRECT_URL = 'blog-home'
 
+# change default LOGIN_URL
 LOGIN_URL = 'login'
+
+# for django-crispy-forms setting
+CRISPY_THEMPLATE_PACK = 'bootstrap4'
+
+# for uploading files
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/'

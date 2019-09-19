@@ -1,6 +1,7 @@
 {% extends "users/base.html" %}
-{% block content %}
 
+{% load crispy_forms_tags %}
+{% block content %}
 <h1>SignUp Form</h1>
 <div class="main-agileinfo">
     <div class="agileits-top">
@@ -24,7 +25,7 @@
                 <div class="colorlibcopy-agile">
                     <p><a href="/"> Back to Home</a></p>
                 </div>
-                {{ form.as_p }}
+                <p>{{ form.as_p }}</p>
             </fieldset>
             <div>
                 <input type="submit" value="Sign Up"></button>
