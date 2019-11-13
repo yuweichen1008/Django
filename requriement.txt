@@ -1,0 +1,9 @@
+## Basic Django 
+django
+
+# Plugins
+django-crispy-forms
+django_tables2
+
+## Python image
+pillow

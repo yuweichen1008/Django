@@ -9,7 +9,7 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
         
-    def save(self):
+    def save(self, *args, **kwargs): # fix bug save() got an unexpected keyword argument 'force_insert'
         super().save()
 
         img = Image.open(self.image.path)
