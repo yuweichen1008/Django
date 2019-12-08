@@ -1,5 +1,5 @@
 ## Basic Django 
-django
+Django==3.0
 
 # Plugins
 django-crispy-forms
